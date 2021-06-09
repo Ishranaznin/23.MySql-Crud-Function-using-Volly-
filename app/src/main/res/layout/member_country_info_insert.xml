@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".MemberCountryInfo_Insert">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Country Ino Auto ID-->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/countryInfoAutoID"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:endIconMode="clear_text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Import Text"
+            android:visibility="invisible"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_countryInfoAutoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Country Info Auto ID-->
+
+        <!--Country  Name-->
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/countryName"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter Country Name"
+            android:textSize="20sp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/countryInfoAutoID"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_Countryname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Country Nama-->
+
+        <!--Member Auto ID-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/memberAutoIDCountry"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="176dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter  Member ID"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_memberAutoIDCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/countryInfoSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="163dp"
+            android:layout_marginEnd="155dp"
+            android:background="#d38938"
+            android:gravity="center"
+            android:text="Save"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/memberAutoIDCountry"
+            app:layout_constraintVertical_bias="0.149" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

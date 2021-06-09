@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".Member_Status_InsertData">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <!-- Member Status Auto ID-->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/statusAuto_id"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Import Text"
+            android:visibility="gone"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_memberStatusAutoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Member Status Auto ID-->
+
+        <!-- Member Status Name-->
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/MemberStatusName"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter  Member Status Name"
+            android:textSize="20sp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/statusAuto_id"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_MemberStatusName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Member Status Nama-->
+
+        <!--Member Auto ID-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/member_autoStatus_ID"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="176dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter  Member ID"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_memberAutoStatuslD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Delete Button-->
+
+        <Button
+            android:id="@+id/saveStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:gravity="center"
+            android:text="SAVE"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.107" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status" />
+
+    <Button
+        android:id="@+id/thana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="61dp"
+        android:text="Thana" />
+
+    <Button
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country" />
+
+    <Button
+        android:id="@+id/distric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="District" />
+
+    <Button
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position" />
+</LinearLayout>

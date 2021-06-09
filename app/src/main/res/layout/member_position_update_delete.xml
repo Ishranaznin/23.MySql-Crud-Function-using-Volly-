@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MemberPositionUpdateDelete">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/positionAutoID_UD"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:endIconMode="clear_text"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_positionAutoID_UD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  Member Position Auto ID-->
+
+        <!-- Position Name-->
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/positionName_UD"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter Position Name of Member"
+            android:textSize="20sp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/positionAutoID_UD"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_positionName_UD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Position Name-->
+
+        <!--Member Auto ID-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/memberAutoID_position_UD"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="176dp"
+            android:layout_marginEnd="16dp"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_memberAutoID_position_UD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Update Button-->
+
+
+        <!-- Delete Button-->
+
+        <Button
+            android:id="@+id/updatePosition"
+
+            android:layout_width="114dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="44dp"
+            android:text="UPDATE"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/delete_button_ID"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/memberAutoID_position_UD" />
+
+        <Button
+            android:id="@+id/deletePosition"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="56dp"
+            android:background="#B9A4D3"
+            android:text="DELETE"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/memberAutoID_position_UD" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

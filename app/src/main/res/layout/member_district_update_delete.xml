@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemberDistrictUpdateDelete"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- District Auto ID-->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/districtAutoId_UD"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:endIconMode="clear_text"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_districtAutoId_UD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- District Auto ID-->
+
+        <!-- District Name-->
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/districtName_UD"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter  District Name"
+            android:textSize="20sp"
+            app:endIconMode="clear_text"
+            app:hintTextColor="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/districtAutoId_UD"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_districtName_UD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:inputType="text"
+                android:textSize="20sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- District Nama-->
+
+
+        <!--Member Auto ID-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/memberAutoID_District_UD"
+            style="@style/Theme.MaterialComponents.Light.NoActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="176dp"
+            android:layout_marginEnd="16dp"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:startIconContentDescription="Import Text"
+            app:startIconDrawable="@drawable/ic_sharp_contacts_24">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ed_memberAutoID_District_UD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- Update Button-->
+
+
+        <!-- Delete Button-->
+
+        <Button
+            android:id="@+id/updateDistrict"
+
+            android:layout_width="114dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="300dp"
+            android:text="UPDATE"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/delete_button_ID"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/deleteDistrict"
+            android:layout_width="129dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="56dp"
+            android:background="#B9A4D3"
+            android:text="DELETE"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

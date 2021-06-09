@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_viewposition"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FCFFFF"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="3dp"
+        card_view:cardUseCompatPadding="true"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/positionitemID"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="id"
+                android:visibility="invisible"
+                android:textColor="#9C27B0"
+                />
+            <TextView
+                android:id="@+id/positionItemName"
+                android:layout_width="400dp"
+                android:layout_height="30dp"
+                android:text="Name"
+                android:textColor="#79098C" />
+
+            <TextView
+                android:id="@+id/positionItemMemberID"
+                android:layout_width="400dp"
+                android:layout_height="30dp"
+                android:text="Member ID"
+                android:textColor="#380540" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
